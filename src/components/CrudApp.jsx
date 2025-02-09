@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Navbar from "../layouts/nabvar";
 
 export default function CrudApp() {
   const [items, setItems] = useState([]);
@@ -31,7 +32,8 @@ export default function CrudApp() {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white shadow-md rounded-lg">
+    <div >
+       <Navbar />
       <h2 className="text-xl font-bold mb-4">CRUD Application</h2>
       <div className="flex space-x-2 mb-4">
         <input
